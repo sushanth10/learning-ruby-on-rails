@@ -31,3 +31,10 @@
 - Use the prefix_verb+'_path' to while defining the link. The controller#action is used in routes.rb file directly. 
 
 - Friend index (app/views/friends/index.html) is the friend display page.
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+* Styling the app with bootstrap *
+
+- Add classes to the respective items to style the components from bootstrap
