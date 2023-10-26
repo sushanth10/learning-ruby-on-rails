@@ -1,0 +1,33 @@
+- Database migration
+    You create a database migration first and then you push the database migration to the database.
+    Routes are created by rails scaffold when it is generated.
+    Also, scaffold makes a bunch of different pages and partial view.
+    Migrations are created in db/migrate folder 
+
+- Datatypes for Database 
+    https://guides.rubyonrails.org/v3.2/migrations.html#supported-types
+    :binary
+    :boolean
+    :date
+    :datetime
+    :decimal
+    :float
+    :integer
+    :primary_key
+    :string
+    :text
+    :time
+    :timestamp
+
+- Schema is the finished product that is pushed into the Database.
+- To push the migration into the database, do `rails db:migrate` which creates a schema.rb file in the config/db directory.
+
+* Scaffolds.scss is a stylesheet file which overwrites the bootstrap css so you can delete it.
+
+- resources:friends in the config/routes.rb automates the CRUD operations in the application. Handles all CRUD operations as a resource.
+
+- To check the routes for the webpages, check `rails routes` which lists all the routes to the webpages.
+
+- Use the prefix_verb+'_path' to while defining the link. The controller#action is used in routes.rb file directly. 
+
+- Friend index (app/views/friends/index.html) is the friend display page.
