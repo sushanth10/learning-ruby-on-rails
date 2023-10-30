@@ -38,3 +38,26 @@ ________________________________________________________________________________
 * Styling the app with bootstrap *
 
 - Add classes to the respective items to style the components from bootstrap
+
+__________________________________________________________________________________________________________________________________________________________
+
+* Devise User Management *
+
+    - This is for creating the user management pages for the web application. (Login and sign up pages)
+
+    - This can be done by the gem named devise in rails.
+
+    - When you are adding a new gem functionality to your project, you would want to edit your gemfile and add the gem to the gemfile, then 'bundle install' to install all dependencies.
+
+    - But for devise, there are more steps to be done in terminal
+        1. bundle install 
+        2. follow getting started steps from devise github homepage
+        3. Follow the terminal instructions on 'rails generate devise:install'
+
+    - When you copy action_mailer which is for mailing purpose, the default url to chose for development.rb would be the development server which is localhost port 3000, but when you push the code for production it will be the url for production server, example would be a heroku host url.
+
+    - rails g devise:views generates all the views required for login, signup, signin etc.
+
+    - rails g devise <MODEL> generates the model (database) for devise to keep track of users who login and logout using database. Creates a migration which you need to push 
+
+    - Creates a bunch of different routes all under the umbrella of devise_for:users in routes.rb file 
