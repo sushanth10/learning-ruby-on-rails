@@ -61,3 +61,11 @@ ________________________________________________________________________________
     - rails g devise <MODEL> generates the model (database) for devise to keep track of users who login and logout using database. Creates a migration which you need to push 
 
     - Creates a bunch of different routes all under the umbrella of devise_for:users in routes.rb file 
+
+__________________________________________________________________________________________________________________________________________________________
+
+* Associations *
+
+- Talks about how each person who logs in can have their own list of friends.
+
+- Associations is about creating connection between the two tables.
