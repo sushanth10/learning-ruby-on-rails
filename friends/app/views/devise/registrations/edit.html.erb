@@ -14,7 +14,6 @@
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" , class:"form-control" %>
     <% if @minimum_password_length %>
-      <br />
       <em>
         <%= @minimum_password_length %> characters minimum
       </em>
@@ -35,12 +34,15 @@
 <br>
 <br>
 <div class="card">
+  <div class="card-header">
+    <h4>Cancel my account</h4>
+  </div>
   <div class="card-body">
-    <h3>Cancel my account</h3>
-    <div>Unhappy? <%= button_to "Cancel my account" , registration_path(resource_name), data: {
+    <h5 class="card-title">Unhappy? </h5>
+ <br>
+    <%= button_to "Cancel my account" , registration_path(resource_name), data: {
                   confirm: "Are you sure?" , turbo_confirm: "Are you sure?" }, method: :delete, class:"btn btn-danger"
                   %>
-    </div>
   </div>
 </div>
 <br>
