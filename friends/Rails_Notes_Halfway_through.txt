@@ -69,3 +69,16 @@ ________________________________________________________________________________
 - Talks about how each person who logs in can have their own list of friends.
 
 - Associations is about creating connection between the two tables.
+
+- To checkout types of active record associations, check into rails documentation on associations.
+
+- Some types are => belongs_to, has_many, etc....
+
+- To add a new column to the database, check in schema.rb file for the database table under db/ folder then 'rails generate migration add_user_id_to_friends user_id:integer:index'
+                                                                                                            'rails generate migration add_columnname_to_tablename columnname:dtype'
+
+- After creating the migration, you need to push the migration to the database using 'rails db:migrate'. This just adds the columns but destroy all the data before doing this.
+
+- 'type: :hidden' hides a field from being displayed.
+
+- 'friends_params' under the friends_controller shows the permitted params for operations.
