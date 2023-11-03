@@ -82,3 +82,9 @@ ________________________________________________________________________________
 - 'type: :hidden' hides a field from being displayed.
 
 - 'friends_params' under the friends_controller shows the permitted params for operations.
+
+- We need to setup a before action which takes place before some action takes place. This is to take care that the pages are not accessible before a user logs into the application.   
+    Before action is there in the friends_controller and it has some function which it does before we perform any action on an instance
+
+- "before_action :authenticate_user!, except: [:index, :show]" => If the user is not authenticated, don't let them do anything except see index and show page.
+    Now if you try create friend without logging in it goes to the login page.
